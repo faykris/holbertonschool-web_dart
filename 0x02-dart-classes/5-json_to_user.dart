@@ -4,13 +4,13 @@ class User {
       required this.name,
       required this.age,
       required this.height});
-  int id;
   String name;
+  int id;
   int age;
   double height;
 
   Map toJson() {
-    return {"id": id, 'name': name, 'age': age, 'height': height};
+    return {"id": id, "name": name, "age": age, "height": height};
   }
 
   static User fromJson(Map<dynamic, dynamic> userJson) {
@@ -22,6 +22,6 @@ class User {
   }
 
   String toString() {
-    return 'User(id : ${id} ,name: ${name}, age: ${age}, height: ${height})';
+    return "User(id : $id ,name: $name, age: $age, height: $height)";
   }
 }
